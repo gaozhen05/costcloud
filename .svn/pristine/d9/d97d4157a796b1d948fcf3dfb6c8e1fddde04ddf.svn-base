@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.njwd.stockphoto.mapper.StockMapper">
+
+    <select id="getStockInfo" resultType="map">
+     select * from wd_material_2334 where id = #{id}
+    </select>
+
+    <select id="getStockList" resultType="map">
+     select * from wd_material_2334 where stock_date = '2019-05-06'
+    </select>
+
+</mapper>

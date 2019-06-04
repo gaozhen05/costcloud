@@ -1,0 +1,17 @@
+server:
+  port: 18053
+
+spring:
+  application:
+    name: stock-photo
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+logging:
+  path: stockphoto/logs/
+  level:
+    root: info    #root表示所有目录，info级别

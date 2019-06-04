@@ -1,0 +1,16 @@
+server:
+  port: 18054
+spring:
+  application:
+    name: cost-supplier
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+logging:
+  path: costsupplier/logs
+  level:
+    root: info

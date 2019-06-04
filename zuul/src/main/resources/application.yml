@@ -1,0 +1,25 @@
+server:
+  port: 18055
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://183.207.183.130:18051/eureka/
+      defaultZone: http://127.0.0.1:18051/eureka/
+spring:
+  application:
+    name: zuul-proxy
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+# 当发布至外网时可能会出现zuul连接超时，需要增加下面配置
+ribbon:
+  ReadTimeout: 60000  # 单位毫秒数
+  SocketTimeout: 60000
+

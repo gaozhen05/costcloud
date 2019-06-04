@@ -1,0 +1,86 @@
+2019-05-31 11:38:37.669  INFO 3124 --- [main] c.njwd.costreport.CostreportApplication  : The following profiles are active: dev
+2019-05-31 11:38:37.689  INFO 3124 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fade1fc: startup date [Fri May 31 11:38:37 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@15c43bd9
+2019-05-31 11:38:38.296  INFO 3124 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fe0bc495-d42b-3689-aabe-e61eb0ac6981
+2019-05-31 11:38:38.311  INFO 3124 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-31 11:38:38.333  INFO 3124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.njwd.costreport.feign.BillFeign' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-31 11:38:38.425  INFO 3124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1324d49e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-31 11:38:38.532  INFO 3124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2f3ed79b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-31 11:38:38.774  INFO 3124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 18056 (http)
+2019-05-31 11:38:38.797  INFO 3124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 11:38:38.797  INFO 3124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.39
+2019-05-31 11:38:38.907  INFO 3124 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-31 11:38:38.908  INFO 3124 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1219 ms
+2019-05-31 11:38:39.053  INFO 3124 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-31 11:38:39.057  INFO 3124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-31 11:38:39.057  INFO 3124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-31 11:38:39.057  INFO 3124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-31 11:38:39.057  INFO 3124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-31 11:38:39.781  INFO 3124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/test],methods=[GET]}" onto public java.lang.Object com.njwd.costreport.controller.TestController.test()
+2019-05-31 11:38:39.782  INFO 3124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getEnterpriseInfo],methods=[GET]}" onto public com.njwd.costreport.entity.ApiMessage com.njwd.costreport.controller.TestController.getEnterpriseInfo(java.lang.String)
+2019-05-31 11:38:39.783  INFO 3124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-05-31 11:38:39.785  INFO 3124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-31 11:38:39.786  INFO 3124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-31 11:38:39.786  INFO 3124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-31 11:38:39.788  INFO 3124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-31 11:38:39.788  INFO 3124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-31 11:38:39.975  WARN 3124 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-05-31 11:38:39.975  INFO 3124 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-31 11:38:39.979  WARN 3124 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-05-31 11:38:39.979  INFO 3124 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-31 11:38:40.106  INFO 3124 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fade1fc: startup date [Fri May 31 11:38:37 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@15c43bd9
+2019-05-31 11:38:40.154  INFO 3124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 11:38:40.154  INFO 3124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 11:38:40.169  INFO 3124 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-05-31 11:38:40.189  INFO 3124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 11:38:40.918  WARN 3124 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2019-05-31 11:38:40.957  INFO 3124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-31 11:38:40.959  INFO 3124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-31 11:38:40.965  INFO 3124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-05-31 11:38:40.966  INFO 3124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-05-31 11:38:40.967  INFO 3124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-05-31 11:38:40.968  INFO 3124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-05-31 11:38:40.978  INFO 3124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-05-31 11:38:40.986  INFO 3124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=fade1fc,type=ConfigurationPropertiesRebinder]
+2019-05-31 11:38:40.990  INFO 3124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-05-31 11:38:41.000  INFO 3124 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-05-31 11:38:41.011  INFO 3124 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-05-31 11:38:41.051  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-05-31 11:38:41.163  INFO 3124 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-05-31 11:38:41.164  INFO 3124 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-05-31 11:38:41.258  INFO 3124 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-05-31 11:38:41.258  INFO 3124 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-05-31 11:38:41.388  INFO 3124 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-31 11:38:41.444  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-05-31 11:38:41.444  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-05-31 11:38:41.444  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-05-31 11:38:41.444  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-05-31 11:38:41.445  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-05-31 11:38:41.445  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-05-31 11:38:41.445  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-05-31 11:38:41.565  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-05-31 11:38:41.566  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-05-31 11:38:41.568  INFO 3124 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-05-31 11:38:41.570  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1559273921570 with initial instances count: 6
+2019-05-31 11:38:41.578  INFO 3124 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application cost-report with eureka with status UP
+2019-05-31 11:38:41.578  INFO 3124 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1559273921578, current=UP, previous=STARTING]
+2019-05-31 11:38:41.580  INFO 3124 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COST-REPORT/10.16.1.130:cost-report:18056: registering service...
+2019-05-31 11:38:41.582  INFO 3124 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-05-31 11:38:41.583  INFO 3124 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-31 11:38:41.598  INFO 3124 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-31 11:38:41.606  INFO 3124 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-31 11:38:41.609  INFO 3124 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COST-REPORT/10.16.1.130:cost-report:18056 - registration status: 204
+2019-05-31 11:38:41.726  INFO 3124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 18056 (http)
+2019-05-31 11:38:41.727  INFO 3124 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 18056
+2019-05-31 11:38:41.731  INFO 3124 --- [main] c.njwd.costreport.CostreportApplication  : Started CostreportApplication in 5.515 seconds (JVM running for 6.13)
+2019-05-31 11:39:57.732  INFO 3124 --- [http-nio-18056-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-31 11:39:57.732  INFO 3124 --- [http-nio-18056-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-31 11:39:57.751  INFO 3124 --- [http-nio-18056-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2019-05-31 11:40:02.391  INFO 3124 --- [http-nio-18056-exec-8] com.njwd.costreport.aop.WebLogAspect     : URL: http://localhost:18056/test/test
+2019-05-31 11:40:02.391  INFO 3124 --- [http-nio-18056-exec-8] com.njwd.costreport.aop.WebLogAspect     : HTTP_METHOD: GET
+2019-05-31 11:40:02.391  INFO 3124 --- [http-nio-18056-exec-8] com.njwd.costreport.aop.WebLogAspect     : IP: 0:0:0:0:0:0:0:1
+2019-05-31 11:40:02.393  INFO 3124 --- [http-nio-18056-exec-8] com.njwd.costreport.aop.WebLogAspect     : RESPONSE: report
+2019-05-31 11:42:34.640  INFO 3124 --- [http-nio-18056-exec-3] com.njwd.costreport.aop.WebLogAspect     : URL: http://10.16.1.130:18056/test/test
+2019-05-31 11:42:34.640  INFO 3124 --- [http-nio-18056-exec-3] com.njwd.costreport.aop.WebLogAspect     : HTTP_METHOD: GET
+2019-05-31 11:42:34.640  INFO 3124 --- [http-nio-18056-exec-3] com.njwd.costreport.aop.WebLogAspect     : IP: 10.16.1.130
+2019-05-31 11:42:34.640  INFO 3124 --- [http-nio-18056-exec-3] com.njwd.costreport.aop.WebLogAspect     : RESPONSE: report
+2019-05-31 11:43:41.447  INFO 3124 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

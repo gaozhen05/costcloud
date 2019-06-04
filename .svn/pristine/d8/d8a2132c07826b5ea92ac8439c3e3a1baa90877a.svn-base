@@ -1,0 +1,16 @@
+server:
+  port: 18057
+spring:
+  application:
+    name: cost-process
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+logging:
+  path: costprocess/logs
+  level:
+    root: info

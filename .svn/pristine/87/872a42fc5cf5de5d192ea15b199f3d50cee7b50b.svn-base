@@ -1,0 +1,16 @@
+server:
+  port: 18059
+spring:
+  application:
+    name: cost-finance
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+logging:
+  path: costfinance/logs
+  level:
+    root: info

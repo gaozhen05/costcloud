@@ -1,0 +1,16 @@
+server:
+  port: 18056
+spring:
+  application:
+    name: cost-report
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+logging:
+  path: costreport/logs
+  level:
+    root: info

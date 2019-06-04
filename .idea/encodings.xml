@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/costbill" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/costconfig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/costfinance" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/costopen" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/costother" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/costprocess" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/costreport" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/costsupplier" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaserver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stockphoto" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul" charset="UTF-8" />
+  </component>
+</project>

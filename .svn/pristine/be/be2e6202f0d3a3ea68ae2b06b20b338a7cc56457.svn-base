@@ -1,0 +1,16 @@
+server:
+  port: 18052
+spring:
+  application:
+    name: cost-bill
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+logging:
+  path: costbill/logs
+  level:
+    root: info
